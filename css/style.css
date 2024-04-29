@@ -14,7 +14,7 @@ body{
   align-items: center;
   justify-content: center;
   background: #324B3F;
-  background-image: url('/images/topo.png');
+  background-image: url("../images/topo.png");
   animation: transitionIn 0.75s;
 }
 
