@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+}
+
+body{
+  display: flex;
+  padding: 10px;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: #324B3F;
+  background-image: url('/images/topo.png');
+  animation: transitionIn 0.75s;
+}
+
+a{
+  text-decoration: none;
+}
+
+h2{
+  margin-top: -8px;
+  font-size: 60px;
+  text-align: center;
+  font-weight: 700;
+  color: #99b3a6;
+  opacity: 1;
+
+  transition: font-size ease-in-out .75s, opacity ease-in-out .75s;
+  
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+h2:hover {
+  font-size: 70px;
+  opacity: 0.75;
+}
+
+.not-selectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
